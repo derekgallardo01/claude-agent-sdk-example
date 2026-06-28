@@ -36,6 +36,14 @@ docker run --rm claude-agent-example pytest -q             # runs the tests
 docker run --rm -it claude-agent-example claude-agent-example --interactive
 ```
 
+## Example: production scenario
+
+**[examples/research_assistant.py](examples/research_assistant.py)** — Multi-turn research session demonstrating all 4 tools (search_corpus, remember, recall, grade_response) in sequence with full transcript output
+
+```bash
+python examples/research_assistant.py
+```
+
 ## What it's for
 
 Most "agent" demos are a single LLM call dressed up with a system prompt.
