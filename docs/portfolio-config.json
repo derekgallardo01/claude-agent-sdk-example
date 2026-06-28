@@ -1,0 +1,12 @@
+{
+  "repo": "claude-agent-sdk-example",
+  "title": "Claude Agent SDK Example",
+  "tagline": "Production-shaped multi-tool Claude agent: coordinator + custom tools + memory + outcomes/grader. Stub-by-default; one env var swaps to the real Claude API.",
+  "kicker": "Anthropic · Claude Agent SDK · Capability Demo",
+  "features": [
+    {"label": "Tools", "value": "4 (search/memory/grade)"},
+    {"label": "Tests", "value": "16 pytest + 5 evals"},
+    {"label": "Provider swap", "value": "Stub → Claude API"}
+  ],
+  "theme": {"primary": "#be4d00", "accent": "#f97316"}
+}

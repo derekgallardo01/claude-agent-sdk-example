@@ -1,0 +1,26 @@
+
+>>> What's our data residency commitment for Copilot?
+    answer:    Based on the corpus search, the most relevant source is data-residency.md. (Source: search_corpus tool, citation = data-residency.md.)
+    tools:     ['search_corpus']
+    citations: ['data-residency.md', 'tenant-baseline.md']
+    steps:     2
+
+>>> Remember that the pilot kick-off is on 2026-07-15.
+    answer:    Saved. I'll remember that for the rest of this session.
+    tools:     ['remember']
+    citations: []
+    steps:     2
+
+>>> Do you remember the pilot kick-off date?
+    answer:    Yes - I have it stored: Remember that the pilot kick-off is on 2026-07-15
+    tools:     ['recall']
+    citations: []
+    steps:     2
+
+>>> How do orphaned SharePoint documents get handled?
+    answer:    Based on the corpus search, the most relevant source is sharepoint-hygiene.md. (Source: search_corpus tool, citation = sharepoint-hygiene.md.)
+    tools:     ['search_corpus']
+    citations: ['sharepoint-hygiene.md', 'tenant-baseline.md']
+    steps:     2
+
+Provider: stub  (set CLAUDE_AGENT_PROVIDER=claude to swap)

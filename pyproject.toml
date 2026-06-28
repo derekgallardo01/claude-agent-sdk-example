@@ -1,0 +1,29 @@
+[project]
+name = "claude-agent-example"
+version = "1.0.0"
+description = "A production-shaped multi-tool Claude agent: coordinator + custom tools + memory + outcomes/grader + MCP connection. Stub-by-default so the demo runs anywhere; one env var swaps to the real Claude Agent SDK."
+authors = [{name = "Derek Gallardo", email = "derekgallardo01@gmail.com"}]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+# Pin the real Claude Agent SDK as an extra so the kit's default path works
+# without it. Install with: pip install -e ".[claude]"
+claude = [
+    "anthropic>=0.40.0",
+]
+
+[project.scripts]
+claude-agent-example = "claude_agent_example.cli:main"
+
+[project.urls]
+Repository = "https://github.com/derekgallardo01/claude-agent-sdk-example"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

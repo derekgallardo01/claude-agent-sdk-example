@@ -1,0 +1,40 @@
+{
+  "description": "Golden evaluation cases for the Claude Agent SDK example. Each case lists a user question, the tool the agent should pick, and rubric phrases that must appear in the final answer (or be retrieved as a citation). The eval harness in run.py exercises the stub provider so it's deterministic; swap CLAUDE_AGENT_PROVIDER=claude to re-run against the live API.",
+  "cases": [
+    {
+      "id": "data-residency",
+      "question": "data residency",
+      "expect_tool": "search_corpus",
+      "expect_citations": ["data-residency.md"],
+      "rubric": ["data-residency.md"]
+    },
+    {
+      "id": "tenant-baseline",
+      "question": "conditional access",
+      "expect_tool": "search_corpus",
+      "expect_citations": ["tenant-baseline.md"],
+      "rubric": ["tenant-baseline.md"]
+    },
+    {
+      "id": "sharepoint-hygiene",
+      "question": "orphaned documents",
+      "expect_tool": "search_corpus",
+      "expect_citations": ["sharepoint-hygiene.md"],
+      "rubric": ["sharepoint-hygiene.md"]
+    },
+    {
+      "id": "incident-runbook",
+      "question": "credential compromise",
+      "expect_tool": "search_corpus",
+      "expect_citations": ["incident-response.md"],
+      "rubric": ["incident-response.md"]
+    },
+    {
+      "id": "remember-pilot-date",
+      "question": "Remember that pilot kick-off is 2026-07-15",
+      "expect_tool": "remember",
+      "expect_citations": [],
+      "rubric": []
+    }
+  ]
+}

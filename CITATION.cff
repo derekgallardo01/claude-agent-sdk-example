@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use or reference this kit, please cite it as below."
+title: "Claude Agent SDK example"
+authors:
+  - family-names: "Gallardo"
+    given-names: "Derek"
+repository-code: "https://github.com/derekgallardo01/claude-agent-sdk-example"
+url: "https://github.com/derekgallardo01/claude-agent-sdk-example"
+license: MIT
+version: "1.0.0"
+date-released: "2026-06-28"
+keywords:
+  - claude-agent-sdk
+  - anthropic
+  - ai-agent
+  - multi-tool-agent
+  - capability-demo
